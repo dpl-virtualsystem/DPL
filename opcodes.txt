@@ -1,0 +1,20 @@
+00 - "NOP" lit. do nothing (1)
+01 - "LDA #$xx" load an immediate byte value into register A (2)
+02 - "LDA ($xxxx)" load the value at memory address XXXX into register A (3)
+03 - "ADD #$xx" add an immediate byte value to register A (2)
+04 - "SUB #$xx" subtract an immediate byte value from register A (2)
+05 - "STA ($xxxx)" store value in register A to memory address XXXX (3)
+06 - "LDX #$xx" byte 01 for register X (2)
+07 - "LDX ($xxxx)" byte 02 for register X (3)
+08 - "STX ($xxxx)" byte 05 for register X (3)
+09 - "LDY #$xx" byte 01 for register Y (2)
+0A - "LDY ($xxxx)" byte 02 for register Y (3)
+0B - "STY ($xxxx)" byte 05 for register Y (3)
+0C - "TXA" transfer value from register X to register A
+0D - "TAX" transfer value from register A to register X
+0E - "TYA" transfer value from register Y to register A
+0F - "TAY" transfer value from register A to register Y
+10 - "MBS #$xx" swap memory bank (00 is ROM, 01 is RAM, 02 is VRAM) (2)
+11 - "JMP $xxxx" jump to address in ROM (2)
+12 - "CALL $xxxx" call subroutine at xxxx in ROM (3)
+13 - "RTS" return from subroutine (1)
